@@ -2,11 +2,11 @@
 
 struct BitmapInfoHeader
 {
-    unsigned int headerSize; // Must be 40d (28h) - offset 0E
-    short widthPixels;       // offset 12
-    short heightPixels;      // offset 14
-    short colorPlanes;       // Must be 1; offset 16
-    short bitsPerPixel;      // offset 18
+    unsigned int headerSize;   // Must be 40d (28h) - offset 0E
+    unsigned int widthPixels;  // offset 12
+    unsigned int heightPixels; // offset 16
+    short colorPlanes;         // Must be 1; offset 1A
+    short bitsPerPixel;        // offset 18
 };
 
 struct BitmapFileHeader
